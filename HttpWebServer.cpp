@@ -17,7 +17,7 @@ void HttpWebServer::outputErrorMessage(int error_code) {
 		buffer,
 		sizeof(buffer),
 		NULL);
-	std::wcout << buffer << ", " << error_code;
+	std::wcout << "Error Code: " << error_code << "\nError Message: " << buffer << "\n\n";
 }
 
 std::string HttpWebServer::httpRequestHeader(int status_code, std::string status_message,  int size) {
