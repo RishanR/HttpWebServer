@@ -85,7 +85,8 @@ void HttpWebServer::initAndRun() {
 	catch (int e) {
 		throw e;
 	}
-	std::cout << "Http Web Server is running...\n\n";
+	std::cout << "HTTP Web Server initialized.\n";
+	std::cout << "Running on port " << tcp_port << "...\n\n";
 
 	// Run TCP listener
 	while (1) {
